@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ Add function with type annotations """
 
 
