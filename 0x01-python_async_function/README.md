@@ -15,3 +15,10 @@
 seconds and eventually returns it.
 - Generate a Random floating point number using:
 **random.uniform(start, stop)**
+
+* **1. Let's execute multiple coroutines at the same time with async**
+[1-concurrent_coroutines.py](./1-concurrent_coroutines.py): Imports the __wait_random__ coroutine from the [0-basic_async_syntax.py](./0-basic_async_syntax.py) file and defines an async routine called __wait_n__
+that takes in 2 int arguments (in this order): n and max_delay.
+- spawn wait_random n times with the specified max_delay.
+- wait_n should return the list of all the delays (float values).
+- The list of the delays should be in ascending order without using sort() because of concurrency.
