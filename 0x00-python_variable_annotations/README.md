@@ -7,4 +7,4 @@ There are two types of annotations in Python: function annotations and variable 
 
 ## Files:
 * [x] [0-add.py](./add.py)
-* [ ] [1-concat.py](./1-concat.py)
+* [x] [1-concat.py](./1-concat.py)
