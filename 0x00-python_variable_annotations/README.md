@@ -6,5 +6,5 @@ data type checking, data type hinting in IDEs, or Integrated Development Environ
 There are two types of annotations in Python: function annotations and variable annotations. I will learn to implement both types in this projects tasks.
 
 ## Files:
-* [x][0-add.py](./add.py)
-* [1-concat.py](./1-concat.py)
+* [x] [0-add.py](./add.py)
+* [ ] [1-concat.py](./1-concat.py)
