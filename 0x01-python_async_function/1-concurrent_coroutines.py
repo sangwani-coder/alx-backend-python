@@ -2,12 +2,12 @@
 """ defines a routine wait_n that takes in 2
     int arguments (in this order): n and max_delay
 """
-
+import typing
 import asyncio
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> list[float]:
+async def wait_n(n: int, max_delay: int) -> typing.List[float]:
     """ Spawns wait_random n times with specified max_delay
         return: A list of all delays(floats) in ascending order.
     """
