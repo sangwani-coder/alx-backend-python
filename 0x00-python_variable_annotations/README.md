@@ -12,3 +12,4 @@ There are two types of annotations in Python: function annotations and variable 
 * [x] [3-to_str.py](./3-to_str.py)
 * [x] [4-define_variables.py](./4-define_variables.py)
 * [x] [5-sum_list.py](./5-sum_list.py)
+* [x] [6-sum_mixed_list.py](./6-sum_mixed_list.py)
