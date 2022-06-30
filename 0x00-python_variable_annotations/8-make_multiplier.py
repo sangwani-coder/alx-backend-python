@@ -4,7 +4,7 @@ import typing
 
 
 def mult(x: float) -> float:
-    """ returns the squre of the x float"""
+    """ returns the square of the x float"""
     return x * x
 
 

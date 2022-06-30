@@ -5,7 +5,7 @@ Annotations aim to improve the readability and understanding of source code and 
 data type checking, data type hinting in IDEs, or Integrated Development Environments auto-completion of code, and automated or AI-driven documentation generation.
 There are two types of annotations in Python: function annotations and variable annotations. I will learn to implement both types in this projects tasks.
 
-## Files:
+## Mandatory task files:
 * [x] [0-add.py](./add.py)
 * [x] [1-concat.py](./1-concat.py)
 * [x] [2-floor.py](./2-floor.py)
@@ -15,3 +15,7 @@ There are two types of annotations in Python: function annotations and variable 
 * [x] [6-sum_mixed_list.py](./6-sum_mixed_list.py)
 * [x] [7-to_kv.py](./7-to_kv.py)
 * [x] [8-make_multiplier.py](./8-make_multiplier.py)
+* [x] [9-element_length.py](./9-element_length.py)
+
+## Advanced optional tasks files
+* [x] [100-safe_first_element.py](./100-safe_first_element.py)
