@@ -14,3 +14,4 @@ There are two types of annotations in Python: function annotations and variable 
 * [x] [5-sum_list.py](./5-sum_list.py)
 * [x] [6-sum_mixed_list.py](./6-sum_mixed_list.py)
 * [x] [7-to_kv.py](./7-to_kv.py)
+* [x] [8-make_multiplier.py](./8-make_multiplier.py)
