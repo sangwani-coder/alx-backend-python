@@ -2,7 +2,7 @@
 """ measure runtime """
 import asyncio
 import time
-import random
+
 
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
@@ -12,12 +12,7 @@ async def measure_runtime() -> float:
         measure and return the total runtime
     """
     start = time.time()
-    await asyncio.gather(
-            async_comprehension(),
-            async_comprehension(),
-            async_comprehension(),
-            async_comprehension()
-            )
+    tasks = [async_comprehension() for _ in range(4)]
+    await asyncio.gather(*tasks)
     end = time.time()
-    run_t = end - start
-    return run_t
+    return end - start
