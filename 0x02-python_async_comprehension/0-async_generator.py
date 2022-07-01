@@ -2,10 +2,10 @@
 """ Defines a coroutine called async_generator that takes no arguments."""
 import asyncio
 import random
-from typing import Iterator
+from typing import Generator
 
 
-async def async_generator() -> Iterator[float]:
+async def async_generator() -> Generator[float, float, float]:
     """
         a coroutine that takes no arguments. loops 10 times,
         each time asynchronously wait 1 second,
