@@ -13,10 +13,6 @@ This repo contains backend specialization programs for the ALX/Holberton softwar
 * [ ] [0x03. ES6 data manipulation]()
 * [x] [0x04. Typescript](./0x04-typescript)
 
-## SQL, MySQL Backend Projects:
-*  [ ] [0x00. MySQL advanced](./0x00-mysql advanced)
-
-
 
 
 
