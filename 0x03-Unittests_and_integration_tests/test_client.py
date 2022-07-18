@@ -102,7 +102,7 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
         self.mock.assert_called()
 
     def test_public_repos_with_license(self):
-        """ Integration test for public repos with License """
+        """ Integration test for public repos with License=apache-2.0 """
         test_class = GithubOrgClient("google")
 
         self.assertEqual(test_class.public_repos(), self.expected_repos)
@@ -113,5 +113,5 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        """A class method called after tests in an individual class have run"""
+        """A class method called after tests in a individual class have run"""
         cls.get_patcher.stop()
