@@ -1,30 +1,30 @@
 #!/usr/bin/env python3
 """ utils test module"""
-
+from parameterized import parameterized
 import unittest
 from utils import access_nested_map
 
 
 class TestAccessNestedMap(unittest.TestCase):
     """ test case"""
-
-    def test_single_map(self):
+    @parameterized.expand([({'a': 1}, ('a'), 1),
+                            ({'a': {'b': 2}}, ('a'), {'b': 2}),
+                            ({'a': {'b': 2}}, ('a', 'b'), 2)
+                            ])
+    def test_access_nested_map(self, nested_map, path, expected):
         """test single map with single path"""
-        nested_map = {"a": 1}, path = ("a",)
-        self.assertEqual(access_nested_map(nested_map, path), 1)
+        self.assertEqual(access_nested_map(nested_map, path), expected)
 
-    def test_test_nested_map(self):
-        """test nested map with single path
-        nested_map={"a": {"b": 2}}, path=("a",)
-        """
-        pass
 
-    def test_nested_map_single_path(self):
-        """ nested map paths
-        nested_map={"a": {"b": 2}}, path=("a", "b")
-        """
-        pass
+    @parameterized.expand([({}, ('a'), KeyError('a')),
+                         ({'a': 1}, ('a', 'b'), KeyError('b'))
+                         ])
+    def test_access_nested_map_exception(self, nested_map, path, expected):
+        """ raise exception with invalid arguments"""
+        with self.assertRaises(KeyError) as error:
+            access_nested_map(nested_map=nested_map, path=path)
 
+        self.assertEqual(repr(error.exception), repr(expected))
 
 
 if __name__ == "__main__":
